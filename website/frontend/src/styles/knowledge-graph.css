@@ -1,0 +1,108 @@
+/* Knowledge Graph Styles */
+.react-flow-graph {
+  width: 100%;
+  height: 100%;
+  background-color: #f8fafc;
+}
+
+.concept-node {
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.concept-node:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.concept-node.basic {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.concept-node.organic {
+  background-color: #22c55e;
+  color: white;
+}
+
+.concept-node.inorganic {
+  background-color: #a855f7;
+  color: white;
+}
+
+.concept-node.physical {
+  background-color: #ef4444;
+  color: white;
+}
+
+.concept-node.analytical {
+  background-color: #eab308;
+  color: white;
+}
+
+.details-panel {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  max-width: 400px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.details-panel h3 {
+  margin-top: 0;
+  color: #1e40af;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 8px;
+}
+
+.details-panel p {
+  color: #4b5563;
+  margin-bottom: 12px;
+}
+
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.category-filter {
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.category-filter:hover {
+  opacity: 0.9;
+}
+
+.category-filter.active {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.related-concepts {
+  margin-top: 12px;
+}
+
+.related-concepts ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.related-concepts li {
+  margin-bottom: 6px;
+  padding: 4px 8px;
+  background-color: #f3f4f6;
+  border-radius: 4px;
+  font-size: 14px;
+} 

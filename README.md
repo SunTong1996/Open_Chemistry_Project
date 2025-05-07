@@ -1,6 +1,18 @@
+---
+date created: 星期日, 三月 23日 2025, 9:30:01 晚上
+date modified: 星期日, 五月 4日 2025, 7:18:30 早上
+---
+
 # Open Chemistry Project (开放化学项目)
 
 这是一个开放的化学主题资源知识库，旨在为化学教育、研究和科普提供全面的资源支持。
+
+
+
+## 开源地址
+
+[SunTong1996/Open_Chemistry_Projet: Chem is try](https://github.com/SunTong1996/Open_Chemistry_Projet)
+
 
 ## 项目目标
 
@@ -93,11 +105,87 @@ Open_Chemistry_Project/
 
 ## 联系方式
 
-- 项目维护者：[维护者姓名]
-- 邮箱：[联系邮箱]
+- 项目维护者：[suntong]
+- 邮箱：[suntong@outlook.com]
 - 项目讨论：[讨论区链接]
 
 ## 致谢
 
-感谢所有为这个项目做出贡献的志愿者们！ 
+感谢所有为这个项目做出贡献的志愿者们！
+
+## 安装与运行
+
+### 安装
+
+1. 克隆仓库后，在项目根目录安装依赖：
+
+```bash
+npm install
+```
+
+2. 安装前端依赖：
+
+```bash
+npm run install:frontend
+```
+
+3. 安装后端依赖：
+
+```bash
+npm run install:backend
+```
+
+### 运行
+
+1. 启动前端开发服务器：
+
+```bash
+npm run start:frontend
+```
+
+2. 前端将在以下地址运行：
+
+```
+http://localhost:3000/
+```
+
+3. 访问元素周期表页面：
+
+```
+http://localhost:3000/periodic-table
+```
+
+## 功能特性
+
+### 元素周期表
+
+- 动态交互式周期表
+- 可定制显示元素属性（符号、名称、原子序数、电子排布等）
+- 按元素分类筛选
+- 搜索功能
+- 元素详情展示
+- 电子轨道动画可视化
+
+### 化学概念知识图谱
+
+- 化学概念数据模型
+- 概念之间的关系可视化
+- 搜索和过滤功能
+- 学习路径推荐
+
+## 技术栈
+
+### 前端
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- React Router
+
+### 后端
+- Node.js
+- Express
+- TypeScript
+- MongoDB
+- JWT 认证 
 

@@ -5,6 +5,7 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import dotenv from 'dotenv';
 import authRoutes from './routes/auth';
+import chemicalConceptRoutes from './routes/chemicalConcept';
 
 // 加载环境变量
 dotenv.config();
@@ -18,7 +19,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 // 数据库连接
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/open-chemistry';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/open_chemistry';
 
 mongoose
   .connect(MONGODB_URI)
@@ -31,11 +32,12 @@ mongoose
 
 // 路由
 app.use('/api/auth', authRoutes);
+app.use('/api/concepts', chemicalConceptRoutes);
 
 // 错误处理中间件
-app.use((err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
+app.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
   console.error(err.stack);
-  res.status(500).json({ message: '服务器内部错误' });
+  res.status(500).json({ message: '服务器错误' });
 });
 
 // 启动服务器

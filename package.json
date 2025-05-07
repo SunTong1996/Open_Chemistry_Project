@@ -1,0 +1,24 @@
+{
+  "name": "open-chemistry-project",
+  "version": "1.0.0",
+  "description": "Open Chemistry Project - 综合化学知识库",
+  "workspaces": [
+    "website/frontend",
+    "website/backend"
+  ],
+  "scripts": {
+    "start:frontend": "cd website/frontend && npm start",
+    "start:backend": "cd website/backend && npm run dev",
+    "install:frontend": "cd website/frontend && npm install",
+    "install:backend": "cd website/backend && npm install",
+    "install:all": "npm install && npm run install:frontend && npm run install:backend",
+    "build:frontend": "cd website/frontend && npm run build",
+    "build:backend": "cd website/backend && npm run build"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.7"
+  }
+}
